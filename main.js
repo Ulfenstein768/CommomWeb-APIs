@@ -1,5 +1,5 @@
 
-//__________This is the dcode (single page application)__________// 
+//__________This is the SPA code (single page application)__________// 
 
 const app = {
     pages: [],
