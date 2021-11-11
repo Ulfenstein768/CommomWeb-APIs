@@ -1,5 +1,5 @@
 
-//__________This is the SPA code (single page application)__________// 
+//__________This is the dcode (single page application)__________// 
 
 const app = {
     pages: [],
@@ -34,7 +34,6 @@ const app = {
         document.querySelector(".working").classList.remove("working");
         document.getElementById(hash).classList.add("working");
         console.log(hash)
-        //history.pushState({}, currentPage, `#${currentPage}`);
         document.getElementById(hash).dispatchEvent(app.show);
     }
 }
