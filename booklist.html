@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.2/cerulean/bootstrap.min.css" integrity="sha512-BvIgMnrsOc4FR/ippiqdEuwjHxB64+hW+7NpD4ogCiMF3Fyzuc8Yt+L9ifD1TCuFV5ZVnA4KcV/88m3v9cA2ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Javascript in the browser - Common Web APIs</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="container mt-4 working" id="home">
+            <ol class="nav nav-tabs">
+                <li><a href="#" class="nav-link active" data-bs-toggle="tab" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-link" data-bs-toggle="tab" data-target="booklist">BOOKLIST</a></li>
+            </ol>
+            <br>
+            <br>
+            <br>
+            <br>
+
+
+            <figure class="text-center">
+                <h1 class="text-center">This is sort of like a to do list, but for books!<br><br><br><br></h1>
+
+                <blockquote class="blockquote">
+                <p class="mb-0">If you don’t like to read, you haven’t found the right book.</p>
+                
+                </blockquote>
+                <br>
+                <figcaption class="blockquote-footer">
+                J.K. Rowling</cite>
+                </figcaption>
+            </figure>
+        </div> 
+        
+        <div class="container mt-4" id="booklist">
+            <ol class="nav nav-tabs">
+                <li><a href="#" class="nav-link" data-bs-toggle="tab" data-target="home">HOME</a></li>
+                <li><a href="#" class="nav-link active" data-bs-toggle="tab" data-target="booklist">BOOKLIST</a></li>
+            </ol>
+            <br>
+            <br>
+        <div class="booklist">
+                <h1 class="text-center">Add Your Books Here! <br>📚😄📚<br><br><br><br></h1>
+                <form id="book-form">
+                    <div class="form-group">
+                        <label for="title">Book Title</label>
+                        <input type="text" id="title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="author">Author</label>
+                        <input type="text" id="author" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label for="isbn">ISBN number</label>
+                        <input type="text" id="isbn" class="form-control">
+                    </div>
+                    <input type="submit" value="Add Book" class="btn btn-primary mt-4">
+                </form>
+                <table class="table table-striped mt-5">
+                    <thead>
+                        <tr>
+                            <th>Book Title</th>
+                            <th>Author</th>
+                            <th>ISBN number</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody id="book-list"></tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>

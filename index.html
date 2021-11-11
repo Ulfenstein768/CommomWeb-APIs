@@ -6,42 +6,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootswatch/5.1.2/cerulean/bootstrap.min.css" integrity="sha512-BvIgMnrsOc4FR/ippiqdEuwjHxB64+hW+7NpD4ogCiMF3Fyzuc8Yt+L9ifD1TCuFV5ZVnA4KcV/88m3v9cA2ag==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Javascript in the browser - Common Web APIs</title>
+    <title>SPA intro</title>
 </head>
 <body>
-    <div class="container mt-4">
-        <h1 class="display-4 text-center">
-            <i class="fas fa-book-open"></i>
-            My Book List
-        </h1>
-        <form id="book-form">
-            <div class="form-group">
-                <label for="title">Title</label>
-                <input type="text" id="title" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="author">Author</label>
-                <input type="text" id="author" class="form-control">
-            </div>
-            <div class="form-group">
-                <label for="isbn">ISBN#</label>
-                <input type="text" id="isbn" class="form-control">
-            </div>
-            <input type="submit" value="Add Book" class="btn btn-primary mt-4">
-        </form>
-        <table class="table table-striped mt-5">
-            <thead>
-                <tr>
-                    <th>Title</th>
-                    <th>Author</th>
-                    <th>ISBN#</th>
-                    <th></th>
-                </tr>
-            </thead>
-            <tbody id="book-list"></tbody>
-        </table>
-    </div>
+  <div class="container mt-4">
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link active" data-bs-toggle="tab" href="/">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-bs-toggle="tab" href="/booklist.html">Booklist</a>
+        </li>
+    </ul>
+    <br>
+    <br>
 
-    <script src="main.js"></script>
+
+    <figure class="text-center">
+      <blockquote class="blockquote">
+        <p class="mb-0">If you don’t like to read, you haven’t found the right book.</p>
+      
+      </blockquote>
+      <br>
+      <figcaption class="blockquote-footer">
+        J.K. Rowling</cite>
+      </figcaption>
+    </figure>
+    
+    
+  </div> 
+
+    <script type="module" src="/static/js/index.js"></script>
 </body>
 </html>
